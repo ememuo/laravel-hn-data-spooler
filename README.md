@@ -96,7 +96,7 @@ To spool data from the HackerNewsAPI, you can use the following command:
  This command will dispatch a job to retrieve and store data from the HackerNewsAPI.
 
 ## API Documentation
-
+[Postman Documentation](https://documenter.getpostman.com/view/25810221/2s9YJW7SMB)
 
 ## Configuration
 ### Environment Variables
