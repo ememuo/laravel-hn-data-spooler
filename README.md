@@ -67,16 +67,16 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
-#HackerNews Data Spooler
+# HackerNews Data Spooler
 This laravel application is designed to spool data from the HackerNews API and store it in a database. It uses Laravel's components like JObs,Queues, Services and Containers to handle data processing. 
 
-## 
+## Stack
 -[Composer](https://getcomposer.org/) installed
 -[PHP](https://www.php.net)
 -[Laravel ](http://laravel.com)
 -[MySQL](https://dev.mysql.com/doc/) 
 
-###Installation
+### Installation
 1. Clone the repository:
 
    ```bash
@@ -87,19 +87,19 @@ This laravel application is designed to spool data from the HackerNews API and s
    ```bash
    composer install
 
-##Usage
+## Usage
 
-###Spooling Data
+### Spooling Data
 To spool data from the HackerNewsAPI, you can use the following command:
     ```bash
     php artisan spool:hn-data
  This command will dispatch a job to retrieve and store data from the HackerNewsAPI.
 
-##API Documentation
+## API Documentation
 
 
-##Configuration
-###Environment Variables
+## Configuration
+### Environment Variables
 You can configure the application by modifying the .env file. You should provide the following environment variables:
 
 __APP_KEY__: Laravel application key.
