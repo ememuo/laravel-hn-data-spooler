@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "584ffc52-8590-46f6-b952-696fc4d45fdb",
+		"name": "HackerNews Data Spool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25810221"
+	},
+	"item": [
+		{
+			"name": "Fetch Stories",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
