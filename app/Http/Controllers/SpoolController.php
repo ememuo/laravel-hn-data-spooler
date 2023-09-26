@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Jobs\SpoolHNData;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 
 class SpoolController extends Controller
 {
