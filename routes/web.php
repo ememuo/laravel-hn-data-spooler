@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SpoolController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('Welcome');
 });
 
-//Route::get('/spool-data', [SpoolContorller::class, 'spoolData']);
+Route::get('/spool-data', [SpoolController::class, 'spoolData']);

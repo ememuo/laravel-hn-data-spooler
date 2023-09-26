@@ -7,12 +7,135 @@
 	},
 	"item": [
 		{
-			"name": "Fetch Stories",
+			"name": "Spool Data",
 			"request": {
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+				{
+					"name": "spool-data error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/spool-data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"spool-data"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 Sep 2023 11:12:37 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 Sep 2023 11:12:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IjkrU01ka1c3UjdPdmNRM2t6UmI0RUE9PSIsInZhbHVlIjoiNlYra3lrekUveUJpRng0ZVhoWXZCWG1RMnNyNm15S2YwSU5xcEJsRUlWYWhmUVdXdVJILzdvMnN3Ym1OeXB2Y1BhRVFyK2t0bm0xeitUNkw3bFRreXMyYnFCV3phZkxxVllmR0xBVnBYNGU3S1p1YVpjamVoL2wwSzVtTExjVkEiLCJtYWMiOiIwZGIyODBiZDg2ODA1MDc1OGJmNTM4N2U0NDQ4NzU1OGNiMDQ2OGE3MDNiOTIwZTgwOGI0OTcyNzhmY2JhMmVmIiwidGFnIjoiIn0%3D; expires=Tue, 26 Sep 2023 13:12:37 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImY3MGVleHVvTERhRG9Ocm8zQ1Vqamc9PSIsInZhbHVlIjoiZHFIRUZBMUE2MUo2MTlTMlVLTHVZOFV6cG5neVBZVmR2RndRM3Vub2QxamQrMktSSHd3Wi90c0w4U2hDR21ZUTR6d3VJTGoyN2x6TTJCL2d1UXR6Ymh2WDh2bnZTanNSZFYyT0V1TXhtOG9uSCtPWGJRa0xUcnFtNTM3VnBCcVoiLCJtYWMiOiJmNThlZjMwZDMxNjE0MGQ5NTZmYzdhYmU2NDU4NGI4YTczMTgxNjI1MTM1MWM0OTM0NDBmMjBjNTc0Y2RjNjQ4IiwidGFnIjoiIn0%3D; expires=Tue, 26 Sep 2023 13:12:37 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"No connection could be made because the target machine actively refused it [tcp://127.0.0.1:6379]\"\n}"
+				},
+				{
+					"name": "spool-data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/spool-data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"spool-data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 Sep 2023 11:30:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 Sep 2023 11:30:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IjZsOFlQajhUSEZvdW41STlmcEt5RFE9PSIsInZhbHVlIjoidkxEVElPc292TWRzdXduRWh6dHZlYlBGSXJ3VmdQNjhzdVZZb2V3RURzak40aFlYbWJDTFd6TjNERnlrNjZGTWdUWFR4bEp6TFVtWm1qRGJEWjc3b1NBL20rVDM5M2NxSzZHUDN1dDJXdDNWVGY0WTVKQVI0dHhpZG82MWdheHAiLCJtYWMiOiJhYzI2MWQzOGFhN2EyZjlhYmZjOTcxYmRlMzI3MGQwMjMwNDcwNDVhOWI2YTNkYjYxNTJhYmRlMTc4ZTU0NmUzIiwidGFnIjoiIn0%3D; expires=Tue, 26 Sep 2023 13:30:57 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6Im5oNFE4UlM2UHhiRm0yRzU0ZXRJamc9PSIsInZhbHVlIjoiRnMyMHZIbXpIOEdHL0dKd250K2VBMGl4QVR0SGU4dU9KenBxOWp4bUpvVXczZWtpdTFxTENmWng1blNodjJNMGJpN3hoS3d1K1MxSCtMRmtEcEd6QUM4bHhTanB0RnVPVWo3alZiR0dNM3krL2NyZWJic08rbGR2eDBGMTJuSmUiLCJtYWMiOiI0ZDQwZjg3MDNkNGMyMGMyYmI3OGEwNTRhMDlkMGM5YTM4ZTNmMGZkNjlmYzUxNzk0MzIwMDQ2ZWUxZGM3NjM0IiwidGFnIjoiIn0%3D; expires=Tue, 26 Sep 2023 13:30:57 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true\n}"
+				}
+			]
 		}
 	]
 }
